@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Password
+
+<div class="text-center">
+    <h4>Random passcode (passcode #@Model.numPasswords)</h4>
+    <div class="border border-2">
+        <h3>@Model.code</h3>
+    </div>
+    <br>
+    <a href="generate" class="btn btn-danger">Generate</a>
+</div>
